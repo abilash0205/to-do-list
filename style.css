@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*! --------------------Login and Sign-up html styles-------------------- */
+html,
+body {
+  height: 100%;
+  font-size: 18px;
+}
+
+#signup {
+  display: none;
+}
+
+.form-signin,
+.form-signup {
+  max-width: 450px;
+  background: url(Meteor.svg);
+  border-radius: 5px;
+}
+
+.form-signin .form-floating:focus-within,
+.form-signup .form-floating:focus-within {
+  z-index: 1;
+}
+
+.form-signin .form-floating input[type="email"],
+.form-signup .form-floating input[type="text"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-signin .form-floating input[type="password"],
+.form-signup .form-floating input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signup .form-floating input[type="email"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*! -------------------------Main Content Styles------------------------- */
+.login {
+    width: 60px;
+    height: 60px;
+    background: #ddd;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.login a {
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    text-decoration: none;
+}
+
+.todo-list-container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
