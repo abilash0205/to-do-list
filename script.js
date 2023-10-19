@@ -17,6 +17,11 @@ signInLink.addEventListener('click', (event) => {
     signInSection.style.display = 'block';
 });
 
+const createBtn = document.getElementById('create-account')
+function createAccount(){
+    signUpSection.style.display = 'none';
+    signInSection.style.display = 'block';
+}
 
 // ! ADDING AND DELETING TASK
 function addTask() {
@@ -42,7 +47,7 @@ function deleteTask(el) {
 
 
 //! FORM VALIDATION
-(function () {
+const fun = (function () {
     'use strict'
     var forms = document.querySelectorAll('.needs-validation')
 
