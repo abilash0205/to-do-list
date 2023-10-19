@@ -33,12 +33,10 @@ function addTask() {
         li.innerHTML = `${task}<button onClick="deleteTask(this)" class="btn-danger px-3 py-2">Delete</button>`
         taskList.appendChild(li)
         taskInput.value = ''
+        li.addEventListener('click', () => {
+            li.style.textDecoration = 'line-through'
+        })
     }
-}
-
-function completeTask() {
-    const taskList = document.getElementById('task-list')
-    taskList.style.textDecoration = 'line-through'
 }
 
 function deleteTask(el) {
